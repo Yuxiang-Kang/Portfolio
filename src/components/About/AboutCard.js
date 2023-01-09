@@ -1,12 +1,17 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { Container, Row, Col } from "react-bootstrap";
 
 function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
+              <blockquote className="blockquote mb-0">
+                  <Row>
+                      <Col md={5} className="home-about-social">
+
+
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
             from <span className="purple"> Bhubaneswar, India.</span>
@@ -31,7 +36,10 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+                          <footer className="blockquote-footer">Soumyajit</footer>
+
+                      </Col>
+                  </Row>
         </blockquote>
       </Card.Body>
     </Card>
